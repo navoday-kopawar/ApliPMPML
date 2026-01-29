@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notifications</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+   
+
+    /* Header */
+    .header {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+    }
+
+    .back-btn {
+      position: absolute;
+      left: 14px;
+      cursor: pointer;
+    }
+
+    .back-btn img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .header h2 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Header -->
+  <div class="header">
+    <div class="back-btn" onclick="history.back()">
+      <img src="./assets/back-arrow-icon.png" alt="Back">
+    </div>
+    <h2>Notifications</h2>
+  </div>
+
+  <!-- Empty State -->
+  <div class="content">
+    No notifications available right now.
+  </div>
+
+</body>
+</html>
